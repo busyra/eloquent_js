@@ -9,7 +9,7 @@ function sum(arr){
 //adds numbers between x - y to arr and passes to sum
 function range(x,y){
     var arr=[];
-    for(var i = x; i < y + 1 ; i++){
+    for(var i = x; i <= y ; i++){
         arr.push(i)
     }
     return arr
