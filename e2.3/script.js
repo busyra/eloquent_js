@@ -4,12 +4,12 @@ var chess = "";
 for (var a = 0; a < size; a++) {
   for (var b = 0; b < size; b++) {
     if ((a + b) % 2 == 0){
-      board += " ";
+      chess += " ";
     }
     else{
-      board += "#";
+      chess += "#";
     }
   }
-  board += "\n";
+  chess += "\n";
 }
 console.log(chess);
