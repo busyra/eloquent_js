@@ -13,8 +13,15 @@ SmartPlantEater.prototype.act = function(view) {
             this.direction = space;
       return {type: "move", direction: this.direction};
 };
+      // tracks amount of prey seen per turn
+function Tiger() {
+      this.energy = 100;
+      this.direction = "w";
+      this.preySeen = [];
+}
 
-//not done yet
+// needs tiger prototype
+
 
 animateWorld(new LifelikeWorld(
       ["####################################################",
