@@ -8,7 +8,14 @@ function primitiveMultiply(a, b) {
 }
 
 function reliableMultiply(a, b) {
- // code here....
+    for (;;) {
+        try {
+          return primitiveMultiply(a, b);
+        } catch (e) {
+          if (!(e instanceof MultiplicatorUnitFailure))
+            throw e;
+        }
+      }
 }
 
 console.log(reliableMultiply(8, 8));
